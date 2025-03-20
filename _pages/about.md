@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm a final year undergraduate student from [Guanghua School of Management](https://www.gsm.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/) and will be a Ph.D. candidate in Upenn AMCS. My research interest includes network analysis, adversarial training, transformer and medical AI.
+My name is Qiaoshi Yang(杨 巧诗). I'm a final year undergraduate student from [Guanghua School of Management](https://www.gsm.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/) and will be a Ph.D. candidate in Upenn AMCS. My research interest includes network analysis, adversarial training, transformer and medical AI.
 
 I am very fortunate to be advised by [Prof. Song Xi Chen](https://songxichen.com/), [Prof. Yumou Qiu](https://yumou.org/) and [Prof. Cong Wang](https://www.gsm.pku.edu.cn/faculty/wangcong/). I learned a lot in the process of studying with these professors, and felt the fun of scientific research!😄
 
