@@ -1,14 +1,14 @@
 ---
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+title: "Blog"
+permalink: /blog/
 author_profile: true
 ---
 
 {% include base_path %}
 
+<h2>Recent Posts</h2>
 
-{% for post in site.portfolio %}
+{% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}
-
