@@ -75,6 +75,8 @@ body.layout--home-cinematic {
 
     @include breakpoint(max-width $small) {
       padding: 0 20px;
+      flex-wrap: wrap;
+      row-gap: 8px;
     }
 
     a {
@@ -87,6 +89,12 @@ body.layout--home-cinematic {
       text-decoration: none;
 
       &:hover { color: $cinematic-gold; }
+
+      @include breakpoint(max-width $small) {
+        font-size: 10px;
+        letter-spacing: .1em;
+        margin-left: 14px;
+      }
     }
   }
 
