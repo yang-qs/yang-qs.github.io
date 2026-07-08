@@ -69,6 +69,10 @@ $cinematic-gold   : #c2a15c;
     justify-content: flex-end;
     z-index: 3;
 
+    @include breakpoint(max-width $small) {
+      padding: 0 20px;
+    }
+
     a {
       font-family: $serif;
       font-size: 11px;
@@ -89,6 +93,10 @@ $cinematic-gold   : #c2a15c;
     z-index: 3;
     max-width: 90%;
 
+    @include breakpoint(max-width $small) {
+      left: 20px;
+    }
+
     .kicker {
       font-family: $serif;
       font-size: 11px;
@@ -106,6 +114,10 @@ $cinematic-gold   : #c2a15c;
       margin: 0;
       color: #f8f3e6;
       text-shadow: 0 2px 30px rgba(0, 0, 0, .75);
+
+      @include breakpoint(max-width $small) {
+        font-size: 30px;
+      }
     }
 
     .gold-rule {

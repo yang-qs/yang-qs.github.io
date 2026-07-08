@@ -1,0 +1,52 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout--home-cinematic">
+
+    {% if page.header.cinematic_image contains "://" %}
+      {% capture cinematic_img %}{{ page.header.cinematic_image }}{% endcapture %}
+    {% elsif page.header.cinematic_image %}
+      {% capture cinematic_img %}{{ page.header.cinematic_image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+    {% endif %}
+
+    <div class="cinematic-hero">
+      <div class="cinematic-photo" style="background-image: url('{{ cinematic_img }}');"></div>
+      <div class="cinematic-teal-tint"></div>
+      <div class="cinematic-grain"></div>
+      <div class="cinematic-vignette"></div>
+      <div class="cinematic-letterbox cinematic-letterbox--top"></div>
+      <div class="cinematic-letterbox cinematic-letterbox--bottom"></div>
+
+      <nav class="cinematic-nav">
+        {% for link in site.data.navigation.main %}
+          {% if link.url contains 'http' %}
+            {% assign nav_domain = '' %}
+          {% else %}
+            {% assign nav_domain = base_path %}
+          {% endif %}
+          <a href="{{ nav_domain }}{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+      </nav>
+
+      <div class="cinematic-hero__text">
+        {% if page.kicker %}<div class="kicker">{{ page.kicker }}</div>{% endif %}
+        <h1>{{ page.title | default: site.author.name }}</h1>
+        <div class="gold-rule"></div>
+        {% if page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
+      </div>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>
