@@ -31,7 +31,7 @@
 {% endif %}
 
 {% if page.header.cinematic_banner and cinematic_img_path %}
-  <div class="cinematic-banner">
+  <div class="cinematic-page-backdrop">
     <div class="cinematic-photo" style="background-image: url('{{ cinematic_img_path }}');"></div>
     <div class="cinematic-teal-tint"></div>
     <div class="cinematic-grain"></div>
@@ -39,6 +39,7 @@
     <div class="cinematic-letterbox cinematic-letterbox--top"></div>
     <div class="cinematic-letterbox cinematic-letterbox--bottom"></div>
   </div>
+  <div class="cinematic-banner-spacer"></div>
 {% else %}
   <div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
     style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}"
