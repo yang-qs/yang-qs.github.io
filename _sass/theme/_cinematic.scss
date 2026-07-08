@@ -152,7 +152,12 @@ body.layout--home-cinematic {
 .cinematic-page-backdrop {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  // z-index: -1 (spec-legal here) renders invisible in real browsers: a fixed
+  // element with a negative z-index gets composited behind the document's own
+  // background instead of in front of it. 0 is the lowest value that actually
+  // paints above body's background while still sitting behind #main/masthead,
+  // which are unpositioned or have their own higher z-index.
+  z-index: 0;
   overflow: hidden;
   @include cinematic-layers;
 }
@@ -165,6 +170,12 @@ body.layout--home-cinematic {
 #main.cinematic-content {
   .page,
   .archive {
+    // .page__inner-wrap (and archive's grid children) are float: left via Susy;
+    // #main clears them via its own clearfix, but .page/.archive never did, so
+    // their own box collapses to just this padding once they get a real
+    // background - overflow: hidden both clears the floats and clips content
+    // to the border-radius.
+    overflow: hidden;
     background: rgba($cinematic-cream, .8);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
