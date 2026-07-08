@@ -1,10 +1,10 @@
 ---
-permalink: /
-title: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+permalink: /about/
+title: "About"
+author_profile: false
+header:
+  cinematic_image: hero-boya-tower.jpg
+  cinematic_banner: true
 ---
 My name is Qiaoshi Yang(杨 巧诗). I'm a final year undergraduate student from [Guanghua School of Management](https://www.gsm.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/) and will be a Ph.D. candidate in Upenn AMCS. My research interest includes network analysis, adversarial training, transformer and medical AI.
 
