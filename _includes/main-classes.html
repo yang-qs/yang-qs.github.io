@@ -1,0 +1,1 @@
+{% capture main_classes %}{% unless page.author_profile or layout.author_profile or page.sidebar %}main--no-sidebar{% endunless %} {% if page.header.cinematic_banner %}cinematic-content{% endif %}{% endcapture %}{% assign main_classes = main_classes | split: " " | join: " " | strip %}

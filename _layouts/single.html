@@ -14,7 +14,8 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main"{% unless page.author_profile or layout.author_profile or page.sidebar %} class="main--no-sidebar"{% endunless %}>
+{% include main-classes.html %}
+<div id="main" role="main"{% if main_classes != "" %} class="{{ main_classes }}"{% endif %}>
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
