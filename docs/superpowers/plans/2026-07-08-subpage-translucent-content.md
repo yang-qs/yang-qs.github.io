@@ -306,7 +306,7 @@ Use `mcp__Claude_Preview__preview_screenshot` on the file (open it directly in t
 
 - [ ] **Step 3: Note any tuning needed**
 
-If the panel is too see-through or the text contrast is weak, adjust the `.82` alpha value and/or blur radius in `_sass/theme/_cinematic.scss` from Task 1 and recompile per Task 1 Step 3, then re-screenshot. Do not commit further changes for this task — Task 1's commit already covers the styling; only amend it if a real problem is found here (see plan note below).
+If the panel is too see-through or the text contrast is weak, adjust the `.8` alpha value and/or blur radius in `_sass/theme/_cinematic.scss` from Task 1 and recompile per Task 1 Step 3, then re-screenshot. Do not commit further changes for this task — Task 1's commit already covers the styling; only amend it if a real problem is found here (see plan note below).
 
 ---
 
