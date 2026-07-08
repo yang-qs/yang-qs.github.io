@@ -2,12 +2,19 @@
 layout: archive
 title: "CV"
 permalink: /cv/
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume
+header:
+  cinematic_image: hero-boya-tower.jpg
+  cinematic_banner: true
 ---
 
 {% include base_path %}
+
+[Email](mailto:sy413102@outlook.com) / [Github](https://github.com/yang-qs)
+
+<div class="editorial-rule"></div>
 
 Education
 ======
