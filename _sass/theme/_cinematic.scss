@@ -7,6 +7,10 @@ $cinematic-cream : #f7f2e9;
 $cinematic-ink    : #4a4433;
 $cinematic-gold   : #c2a15c;
 
+body.layout--home-cinematic {
+  padding: 0;
+}
+
 @mixin cinematic-layers {
   .cinematic-photo {
     position: absolute;
