@@ -1,16 +1,31 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks & Teaching"
 permalink: /talks/
-author_profile: true
+author_profile: false
+redirect_from:
+  - /teaching/
+header:
+  cinematic_image: hero-boya-tower.jpg
+  cinematic_banner: true
 ---
 
+{% include base_path %}
+
 {% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+  <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
 {% endif %}
+
+<h2>Talks</h2>
 
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
+{% endfor %}
+
+<div class="editorial-rule"></div>
+
+<h2>Teaching</h2>
+
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
 {% endfor %}
