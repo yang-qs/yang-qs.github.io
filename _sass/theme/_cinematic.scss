@@ -173,6 +173,19 @@ body.layout--home-cinematic {
   }
 }
 
+// _sass/layout/_page.scss and _archive.scss zero out padding-left/right on
+// #main.main--no-sidebar .page/.archive at $large, tying on specificity with
+// the rule above - this combined-class selector wins that tie regardless of import order.
+#main.cinematic-content.main--no-sidebar {
+  .page,
+  .archive {
+    @include breakpoint($large) {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+}
+
 /* ==========================================================================
    EDITORIAL SUBPAGE ACCENTS
    ========================================================================== */
